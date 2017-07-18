@@ -1,95 +1,16 @@
-BEL2ABM manual and user guide
-
-= and documentation of implemented behaviour =
-
-V1.0
-
-= Calambrone version =
+BEL2ABM
+=======
 
 Author: Michaela Gündel, Fraunhofer SCAI Bio, St. Augustin, Germany
 
 michaela.guendel@scai-extern.fraunhofer.de
 
-**Contents**
-
-`This BEL2ABM manual / guide 3 <#this-bel2abm-manual-guide>`__
-
-`BEL2ABM 3 <#bel2abm>`__
-
-`Conversion of BEL to ABM behaviour – description 4 <#_Toc463947357>`__
-
-`BEL functions 4 <#bel-functions>`__
-
-`Abundance functions 4 <#abundance-functions>`__
-
-`Modifications 5 <#modifications>`__
-
-`Activities 5 <#activities>`__
-
-`Processes 6 <#processes>`__
-
-`Transformations 6 <#transformations>`__
-
-`BEL relationships 7 <#bel-relationships>`__
-
-`Causal relationships 7 <#causal-relationships>`__
-
-`Correlative relationships 7 <#correlative-relationships>`__
-
-`Genomic relationships 7 <#genomic-relationships>`__
-
-`Other relationships 8 <#other-relationships>`__
-
-`Agent activity 8 <#agent-activity>`__
-
-`Agent location 8 <#agent-location>`__
-
-`Homeostatic mimicking 9 <#homeostatic-mimicking>`__
-
-`death with homeostatic value 9 <#death-with-homeostatic-value>`__
-
-`death with maximum upper limit 9 <#_Toc463947373>`__
-
-`reproduce 10 <#reproduce>`__
-
-`Ontology leveraging 10 <#ontology-leveraging>`__
-
-`Ontology format 11 <#ontology-format>`__
-
-`Biological behaviour 11 <#biological-behaviour>`__
-
-`Enzymes 11 <#enzymes>`__
-
-`Allosteric enzymes 11 <#allosteric-enzymes>`__
-
-`External files 12 <#external-files>`__
-
-`Homeostatic value file 12 <#homeostatic-value-file>`__
-
-`Settings 12 <#settings>`__
-
-`Arguments passed to the Java program
-12 <#arguments-passed-to-the-java-program>`__
-
-`Settings .ini file 12 <#settings-.ini-file>`__
-
-`References 15 <#_Toc463947385>`__
-
-This BEL2ABM manual / guide
-===========================
-
-This manual describes the currently implemented behaviours of the
+BEL2ABM is a method and tool to automatically convert BEL essentials to
+an Agent-Based Model (ABM). This manual describes the currently implemented behaviours of the
 BEL2ABM tool. For every BEL language entity, we explain how it is
 converted into agent behaviour. The document details which of the BEL
 components have been implemented in the tool and which are parts of the
 future work list.
-
-BEL2ABM
-=======
-
-BEL2ABM is a method and tool to automatically convert BEL essentials to
-an Agent-Based Model (ABM). Please read our technical application note
-[] for details.
 
 BEL2ABM uses an ontology (see Ontology leveraging), an external
 homeostatic value file (see Homeostatic mimicking and Homeostatic value
