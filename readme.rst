@@ -804,6 +804,17 @@ Settings .ini file
 | -reactionDistance                       | An agent can interact with other agents that are within a distance of [0..-reactionDistance].                                                                                                                                                   | 3                                                                                                                |
 +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
+Example Run
+===========
+
+Using the data from the example folder, CD into ``BEL2ABM/src/de/fraunhofer/scai`` and run (after changing the paths to the data)
+
+.. code::
+
+   javac BEL2ABM.java
+   java -cp . BEL2ABM -l -k APP_SORLA -ABMCode BEL2ABM_code.nlogo -v
+
+
 To do list
 ==========
 
