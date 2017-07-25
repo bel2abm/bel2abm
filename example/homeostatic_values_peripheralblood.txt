@@ -1,0 +1,20 @@
+http://scai.fraunhofer.de/MSOntology#B_cell	B lymphocytes	312			Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://purl.obolibrary.org/obo/CL_0000912	Helper T lymphocytes	1375			Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://purl.obolibrary.org/obo/CL_0000910	Cytotoxic T cells	562			Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://scai.fraunhofer.de/AlzheimerOntology#macrophages	Macrophages	300			Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://scai.fraunhofer.de/MSOntology#DC	Dendritic cells	300			Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://purl.obolibrary.org/obo/CL_0000066	Epithelial cells	300			Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://purl.org/obo/owl/CL#CL_0000623	Natural Killer cells	250			Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://purl.org/obo/owl/CL#CL_0000738	White blood cells (leukocytes)	7400		microliter	Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://scai.fraunhofer.de/AlzheimerOntology#Neutrophils	neutrophils	4400		microliter	Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://scai.fraunhofer.de/AlzheimerOntology#Eosinophils	eosinophils	200		microliter	Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://scai.fraunhofer.de/AlzheimerOntology#Basophils	basophils	40		microliter	Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://purl.org/obo/owl/CL#CL_0000542	lymphocytes	2500		microliter	Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://scai.fraunhofer.de/AlzheimerOntology#Monocyte	monocytes	300		microliter	Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://purl.obolibrary.org/obo/CL_0000492 	CD4+ helper T lymphocytes	3515	35-60% of leukocytes	microliter	Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://purl.obolibrary.org/obo/CL_0000910	CD8+ cytotoxic T lymphocytes	2035	15-40% of leukocytes	microliter	Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://scai.fraunhofer.de/MSOntology#T_Reg	Regulatory T cells	37	rare	microliter	Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	“rare”
+http://scai.fraunhofer.de/MSOntology#NKT_cell	NKT cells	1295	5-30% of leukocytes	microliter	Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://scai.fraunhofer.de/MSOntology#Gamma_delta_T_cell	gamma delta T lymphocytes	37	rare	microliter	Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	“rare”
+http://purl.obolibrary.org/obo/CL_0002038 	Follicular T cells	925	5-20% of leukocytes	microliter	Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
+http://purl.obolibrary.org/obo/CL_0000845 	marginal zone B cells	185	2-3% of leukocytes	microliter	Cellular and Molecular Immunology, 8th edition, Abbas, Lichtman and Pillai.	
