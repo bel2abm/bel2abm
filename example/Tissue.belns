@@ -1,0 +1,27 @@
+[Namespace]
+NameString=Tissue terminology
+Keyword=Tissue
+DomainString=Other
+SpeciesString=9606, 10090, 10116
+DescriptionString=Custom Tissue terminology for use as abundances. 
+VersionString=20160130
+CreatedDateTime=2015-01-30T10:30:52
+
+[Author]
+NameString=Michaela Michi Guendel
+CopyrightString=Fraunhofer SCAI, Sankt Augustin, Germany
+ContactInfoString=michaela.guendel@scai-extern.fraunhofer.de
+
+[Citation]
+NameString=Tissue terminology
+DescriptionString=This Tissue terminology is a custom terminology to be used for abundances (vs. annotations) and is incomplete.
+PublishedDate=2016-01-30
+
+[Processing]
+CaseSensitiveFlag=yes
+DelimiterString=|
+CacheableFlag=yes
+
+[Values]
+myelin|A
+cerebral tissue|A
