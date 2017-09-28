@@ -440,93 +440,98 @@ Probabilities will be calculated as follows:
 death with homeostatic value
 ----------------------------
 
-;;homeostasis mimicking: die when there are too many of your kind
+.. code-block::
 
-let current count breed
+   ;;homeostasis mimicking: die when there are too many of your kind
 
-let h homeostatic-[value\_of\_agent]
+   let current count breed
 
-let minimum h / 3
+   let h homeostatic-[value\_of\_agent]
 
-let maximum h \* 3
+   let minimum h / 3
 
-let dev\_cur\_from\_homeo current – h ;; deviation of current number
-from homeostatic value
+   let maximum h \* 3
 
-let ran random-normal-in-bounds h (h / 20) minimum maximum
+   let dev\_cur\_from\_homeo current – h ;; deviation of current number
+   from homeostatic value
 
-let dev\_ran\_from\_homeo abs h – ran ;; deviation of random normal
-number from homeostatic value
+   let ran random-normal-in-bounds h (h / 20) minimum maximum
 
-if dev\_cur\_from\_homeo > 0 and ( random-float 1 >= abs (
-dev\_ran\_from\_homeo / dev\_cur\_from\_homeo) )
+   let dev\_ran\_from\_homeo abs h – ran ;; deviation of random normal
+   number from homeostatic value
 
-;; the greater the deviation, the higher the probability to die
+   if dev\_cur\_from\_homeo > 0 and ( random-float 1 >= abs (
+   dev\_ran\_from\_homeo / dev\_cur\_from\_homeo) )
 
-[
+   ;; the greater the deviation, the higher the probability to die
 
-if random 100 < 50
+   [
 
-[ die ]
+   if random 100 < 50
 
-]
+   [ die ]
+
+   ]
 
 reproduce
 ---------
 
-let current count breed
+.. code-block::
 
-let minimum maxhomeostatic-Teff\_naive / 3
+   let current count breed
 
-let maximum maxhomeostatic-Teff\_naive \* 3
+   let minimum maxhomeostatic-Teff\_naive / 3
 
-let dev\_cur\_from\_homeo current - maxhomeostatic-Teff\_naive ;;
-deviation of current number from homeostatic value
+   let maximum maxhomeostatic-Teff\_naive \* 3
 
-let ran random-normal-in-bounds maxhomeostatic-Teff\_naive
-(maxhomeostatic-Teff\_naive / 20) minimum maximum
+   let dev\_cur\_from\_homeo current - maxhomeostatic-Teff\_naive ;;
+   deviation of current number from homeostatic value
 
-let dev\_ran\_from\_homeo abs maxhomeostatic-Teff\_naive - ran ;;
-deviation of random normal number from homeostatic value
+   let ran random-normal-in-bounds maxhomeostatic-Teff\_naive
+   (maxhomeostatic-Teff\_naive / 20) minimum maximum
 
-if dev\_cur\_from\_homeo > 0 and ( random-float 1 <= abs (
-dev\_ran\_from\_homeo / dev\_cur\_from\_homeo ) ) ;; the greater the
-deviation from maxvalue, the lower the probability to reproduce
+   let dev\_ran\_from\_homeo abs maxhomeostatic-Teff\_naive - ran ;;
+   deviation of random normal number from homeostatic value
 
-[
+   if dev\_cur\_from\_homeo > 0 and ( random-float 1 <= abs (
+   dev\_ran\_from\_homeo / dev\_cur\_from\_homeo ) ) ;; the greater the
+   deviation from maxvalue, the lower the probability to reproduce
 
-if random 100 < dupli-rate-[…] and energy > 0 [
+   [
 
-set activity (activity / 2) ;; divide activity between parent and
-offspring
+   if random 100 < dupli-rate-[…] and energy > 0 [
 
-hatch-[agent] times [ lt random 90 set energy random (2 \* lifespan-[…])
-set color […] set size […] ] ;; don't move forward to prevent leaving
-the region
+   set activity (activity / 2) ;; divide activity between parent and
+   offspring
 
-]
+   hatch-[agent] times [ lt random 90 set energy random (2 \* lifespan-[…])
+   set color […] set size […] ] ;; don't move forward to prevent leaving
+   the region
+
+   ]
 
 Reproduce with upper limit
 --------------------------
+.. code-block::
+   
+   ;; agent has an upper limit of
 
-;; agent has an upper limit of
+   ;; if its number gets as high or higher than this, let its youngest
+   agents die
 
-;; if its number gets as high or higher than this, let its youngest
-agents die
+   let cur\_no count breed
 
-let cur\_no count breed
+   let youngest one-of breed ;; just to initialize
 
-let youngest one-of breed ;; just to initialize
+   repeat cur\_no - upper-lim-myelin - 1
 
-repeat cur\_no - upper-lim-myelin - 1
+   [
 
-[
+   set youngest max-one-of breed [energy]
 
-set youngest max-one-of breed [energy]
+   ask youngest [ die ]
 
-ask youngest [ die ]
-
-]
+   ]
 
 Ontology leveraging
 ===================
