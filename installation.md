@@ -7,7 +7,7 @@
 - install the OpenBEL Framework 2.0.0 Dragon Fruit from https://github.com/OpenBEL/openbel-framework/downloads
 - install NetLogo 5.0.5 or compatible from http://ccl.northwestern.edu/netlogo/
 - set environment for java, jena and OpenBEL
-- download BEL2ABM source code and example folder from https://github.com/pybel/bel2abm
+- download BEL2ABM source code and example folder (SORL1 Case Study folder) from https://github.com/pybel/bel2abm
 
 ## Example run
 
