@@ -2,8 +2,8 @@
 
 ## Installation instructions
 
-- install Java 1.6 or compatible from http://java.com
-- download Apache Jena 2.6.4 or compatible from jena.apache.org
+- install Java JDK 1.6 or upwards compatible from http://www.oracle.com/technetwork/java/javase/downloads/index.html
+- download Apache Jena 2.6.4 or compatible from jena.apache.org 
 - download the OpenBEL Framework 2.0.0 Dragon Fruit from https://github.com/OpenBEL/openbel-framework/downloads
 - install NetLogo 5.0.5 or compatible from http://ccl.northwestern.edu/netlogo/
 - set environment for Java (JAVA_HOME), Jena and OpenBEL (BELFRAMEWORK_HOME)
