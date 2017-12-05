@@ -12,7 +12,18 @@
 ## Example run
 
 Using the data from the example folder, load `APP_SORLA.bel` as a KAM into the framework:
-CD into the installation of the OpenBEL Framework and run 
+
+Change the following paths in `APP_SORLA.bel` :
+```sh
+DEFINE NAMESPACE Cell AS URL "[path to SORL1 Case Study]/CELL.belns"
+DEFINE NAMESPACE MSO AS URL "[path to SORL1 Case Study]/MSO.belns"
+DEFINE NAMESPACE Tissue AS URL "[path to SORL1 Case Study]/Tissue.belns"
+DEFINE NAMESPACE HUPSON AS URL "[path to SORL1 Case Study]/HUPSON.belns"
+```
+
+(example: DEFINE NAMESPACE Cell AS URL "file:///C:/Users/abcuser/Desktop/bel2abm-master/SORL1 Case Study/CELL.belns")
+
+Then, CD into the installation of the OpenBEL Framework and run 
 
 Windows
 
