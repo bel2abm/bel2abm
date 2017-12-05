@@ -37,7 +37,7 @@ Mac and Linux
 belc.sh –f path_to_APP_SORLA.bel –k APP_SROLA –d "SORLA KAM" –v 
 ```
 
-Make sure the files from the example directory are in BEL2ABM/src/de/fraunhofer/scai,
+Copy the .ini, .txt, .owl and .nlogo files from the SORL1 Case Study example directory to BEL2ABM/src/de/fraunhofer/scai,
 CD into `BEL2ABM/src/de/fraunhofer/scai` and run 
 
 ```sh
