@@ -23,7 +23,7 @@ DEFINE NAMESPACE HUPSON AS URL "[path to SORL1 Case Study]/HUPSON.belns"
 
 (example: DEFINE NAMESPACE Cell AS URL "file:///C:/Users/abcuser/Desktop/bel2abm-master/SORL1 Case Study/CELL.belns")
 
-Then, CD into the installation of the OpenBEL Framework and run 
+Then, CD into the installation of the OpenBEL Framework and compile the APP_SORLA.bel file. To do this, run 
 
 Windows
 
