@@ -46,7 +46,7 @@ Windows
 dir /s /B *.java > sources.txt
 javac -cp "[path to jena]\lib\*;[path to OpenBEL]\lib\belcompiler\*" @sources.txt
 cd BEL2ABM/src/de/fraunhofer/scai
-java -cp ".;..\..\..\..\..\MathParser\de\fraunhofer\scai\MathML\*;[path to jena]\lib\*;[path to OpenBEL]\lib\belcompiler\*" BEL2ABM -l -k APP_SORLA -ABMCode BEL2ABM_code.nlogo -v
+java -cp ".;[path to bel2abm-master]\MathParser\de\fraunhofer\scai\MathML\*;[path to jena]\lib\*;[path to OpenBEL]\lib\belcompiler\*" BEL2ABM -l -k APP_SORLA -ABMCode BEL2ABM_code.nlogo -v
 ```
 
 Mac and Linux
