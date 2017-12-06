@@ -6,7 +6,7 @@
 - download Apache Jena 2.6.4 or compatible from jena.apache.org 
 - download the OpenBEL Framework 2.0.0 Dragon Fruit from https://github.com/OpenBEL/openbel-framework/downloads
 - install NetLogo 5.0.5 or compatible from http://ccl.northwestern.edu/netlogo/
-- set environment for Java (JAVA_HOME)
+- set environment for Java (JAVA_HOME), for the BEL Framework (BELFRAMEWORK_HOME)
 - download BEL2ABM source code and example folder (SORL1 Case Study folder) from https://github.com/pybel/bel2abm
 
 ## Example run
