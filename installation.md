@@ -37,12 +37,18 @@ Mac and Linux
 belc.sh –f path_to_APP_SORLA.bel –k APP_SROLA –d "SORLA KAM" –v 
 ```
 
-Copy the .ini, .txt, .owl and .nlogo files from the SORL1 Case Study example directory to BEL2ABM/src/de/fraunhofer/scai,
-CD into `BEL2ABM/src/de/fraunhofer/scai` and run 
+Copy the .ini, .txt, .owl and .nlogo files from the SORL1 Case Study example directory to `BEL2ABM/src/de/fraunhofer/scai`,
+CD into the directory one level above this one called `bel2abm-master` and run 
+
+Windows
 
 ```sh
-javac BEL2ABM.java
+dir /s /B *.java > sources.txt
+javac -cp "[path to jena]\lib\*;[path to OpenBEL]\lib\belcompiler\*" @sources.txt
 java -cp . BEL2ABM -l -k APP_SORLA -ABMCode BEL2ABM_code.nlogo -v
 ```
+
+Mac and Linux
+
 
 12/05/2017 MG
