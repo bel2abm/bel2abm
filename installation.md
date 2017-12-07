@@ -38,7 +38,7 @@ belc.sh –f path_to_APP_SORLA.bel –k APP_SROLA –d "SORLA KAM" –v
 ```
 
 Copy the .ini, .txt, .owl and .nlogo files from the SORL1 Case Study example directory to `BEL2ABM/src/`,
-CD into the directory one level above this one called `bel2abm-master` and run 
+CD into the directory one level above this one (called `bel2abm-master`) and run 
 
 Windows
 
@@ -46,10 +46,16 @@ Windows
 dir /s /B *.java > sources.txt
 javac -cp "[path to jena]\lib\*;[path to OpenBEL]\lib\belcompiler\*" @sources.txt
 cd BEL2ABM\src
-java -cp ".;[path to bel2abm-master]\MathParser\de\fraunhofer\scai\MathML\*;[path to jena]\lib\*;[path to OpenBEL]\lib\belcompiler\*" de.fraunhofer.scai.BEL2ABM -l -k APP_SORLA -ABMCode BEL2ABM_code.nlogo -v
+java -cp ".;[path to bel2abm-master]\MathParser;[path to jena]\lib\*;[path to OpenBEL]\lib\belcompiler\*" de.fraunhofer.scai.BEL2ABM -l -k APP_SORLA -ABMCode BEL2ABM_code.nlogo -v
 ```
 
 Mac and Linux
 
+```sh
+find -name "*.java" > sources.txt
+javac -cp "[path to jena]/lib/*:[path to OpenBEL]/lib/belcompiler/*" @sources.txt
+cd BEL2ABM/src
+java -cp ".:[path to bel2abm-master]\MathParser:[path to jena]/lib/*:[path to OpenBEL]/lib/belcompiler/*" de.fraunhofer.scai.BEL2ABM -l -k APP_SORLA -ABMCode BEL2ABM_code.nlogo -v
+```
 
-12/05/2017 MG
+This will generate the NetLogo input file `BEL2ABM_code.nlogo` along with some logging files inside the `BEL2ABM/src` folder.
