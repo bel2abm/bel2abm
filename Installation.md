@@ -1,6 +1,6 @@
-# Installation and running of BEL2ABM
+# Installation and Running of BEL2ABM
 
-## Installation instructions
+## Installation Instructions
 
 - install Java JDK 1.6 or upwards compatible from http://www.oracle.com/technetwork/java/javase/downloads/index.html
 - download Apache Jena 2.6.4 or compatible from jena.apache.org 
@@ -9,7 +9,7 @@
 - set environment for Java (JAVA_HOME), for the BEL Framework (BELFRAMEWORK_HOME)
 - download BEL2ABM source code and example folder (SORL1 Case Study folder) from https://github.com/pybel/bel2abm
 
-## Example run
+## Example Run
 
 Using the data from the example folder, load `APP_SORLA.bel` as a KAM into the framework:
 
