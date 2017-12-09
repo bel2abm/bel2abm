@@ -46,8 +46,12 @@ Using the data from the example folder, CD into ``BEL2ABM/src/de/fraunhofer/scai
    java -cp . BEL2ABM -l -k APP_SORLA -ABMCode BEL2ABM_code.nlogo -v
 
 
-Arguments passed to the Java program
-------------------------------------
+Configuration
+=============
+
+Command Line Interface
+----------------------
+The runtime parameters of this Java program has the following command line options:
 
 +------------------+-------------------------------------------------------------------------------+-----------------------+
 | ***Argument***   | ***Description***                                                             | ***Example value***   |
@@ -61,8 +65,9 @@ Arguments passed to the Java program
 | -v               | Verbous output in resulting .netlogo file (includes provenance of the code)   |                       |
 +------------------+-------------------------------------------------------------------------------+-----------------------+
 
-Settings .ini file
-------------------
+NetLogo Configuration
+---------------------
+NetLogo uses the following configuration specified in a configuration (``.ini``) file.
 
 +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 | ***Argument***                          | ***Description***                                                                                                                                                                                                                               | ***Example values***                                                                                             |
