@@ -54,7 +54,7 @@ Command Line Interface
 The runtime parameters of this Java program has the following command line options:
 
 +------------------+-------------------------------------------------------------------------------+-----------------------+
-| ***Argument***   | ***Description***                                                             | ***Example value***   |
+|  **Argument**    |  **Description**                                                              |  **Example value**    |
 +==================+===============================================================================+=======================+
 | -l               | Lists the KAMs in the KAM store. OpenBEL method.                              |                       |
 +------------------+-------------------------------------------------------------------------------+-----------------------+
@@ -70,7 +70,7 @@ NetLogo Configuration
 NetLogo uses the following configuration specified in a configuration (``.ini``) file.
 
 +-----------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
-| ***Argument***                          | ***Description***                                                                                                                                                                                                                               | ***Example values***                                                                                             |
+| **Argument**                          | **Description**                                                                                                                                                                                                                               | **Example values**                                                                                             |
 +=========================================+=================================================================================================================================================================================================================================================+==================================================================================================================+
 | -agent                                  | The BEL abundances that will be used for display in the NetLogo simulation. Note: This is just for display. Internally, all abundances are transformed into agents. Use long names of BEL terms (eg. complexAbundance() instead of complex())   | complexAbundance(proteinAbundance(MSO:"Alpha secretase"),proteinAbundance(MSO:"Alpha secretase"))                |
 |                                         |                                                                                                                                                                                                                                                 |                                                                                                                  |
