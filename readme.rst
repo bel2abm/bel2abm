@@ -1,10 +1,5 @@
 BEL2ABM
 =======
-
-Author: Michaela Gündel, Fraunhofer SCAI Bio, St. Augustin, Germany
-
-michaela.guendel@scai-extern.fraunhofer.de
-
 BEL2ABM is a method and tool to automatically convert BEL essentials to
 an Agent-Based Model (ABM). This manual describes the currently implemented behaviours of the
 BEL2ABM tool. For every BEL language entity, we explain how it is
